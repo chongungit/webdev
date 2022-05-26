@@ -12,7 +12,7 @@
 .container-02 {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr .5fr;
-    grid-template-rows: 10rem;
+    grid-template-rows: 6rem;
     list-style-type: none;
 }
 
@@ -58,8 +58,8 @@ grid {
 
 #grid-fixed {
     display: grid;
-    grid-template-columns: [start col-a ]200px [col-b] 50% [col-c] 100px [stop end last];
-    grid-template-rows: [start masthead] 3em [content] 100% [footer] 2em [stop end];
+    grid-template-columns: [start col-a ]200px [col-b] 60% [col-c] 3em [stop end last];
+    grid-template-rows: [start masthead] 3em [content] calc(100% - 5em) [footer] 2em [stop end];
     background-color: orange;
 }
 
@@ -90,4 +90,38 @@ grid {
 
 .flex-bar > li:nth-child(3) {
     background-color: palevioletred;
+}
+
+/*section {
+    display: -moz-inline-block;
+}*/
+
+.grid-f-fr {
+    list-style-type: none;
+    padding: 0em;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: 2em 1em;
+}
+
+.grid-f-fr > li:nth-child(1) {
+    background-color: lightslategray;
+}
+.grid-f-fr > li:nth-child(2) {
+    background-color: orangered;
+}
+.grid-f-fr > li:nth-child(3) {
+    background-color: palevioletred;
+}
+.grid-f-fr > li:nth-child(4) {
+    background-color: deepskyblue;
+}
+.grid-f-fr > li:nth-child(5) {
+    background-color: chartreuse;
+}
+.grid-f-fr > li:nth-child(6) {
+    background-color: violet;
+}
+.grid-f-fr > li:nth-child(7) {
+    background-color: sandybrown;
 }
