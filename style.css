@@ -5,7 +5,7 @@
 .container-01 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10rem;
+    grid-template-rows: 3rem;
     background-color: orange;
 }
 
@@ -19,8 +19,10 @@
 grid {
     margin: 5px;
 }
+
 .grid-1 {
     background-color: red;
+    background-blend-mode: screen;
     margin: 5px;
     transform: rotate(20deg);
     /*opacity: 60%;*/
@@ -42,7 +44,7 @@ grid {
 }
 .grid-5 {
     background-color: blueviolet;
-    transform: rotate(170deg);
+    transform: rotate(315deg);
     margin: 5px;
 }
 
@@ -57,6 +59,35 @@ grid {
 #grid-fixed {
     display: grid;
     grid-template-columns: [start col-a ]200px [col-b] 50% [col-c] 100px [stop end last];
-    grid-template-rows: [start masthead] 2em [content] 500px [footer] 2em [stop end];
+    grid-template-rows: [start masthead] 3em [content] 100% [footer] 2em [stop end];
     background-color: orange;
+}
+
+.flex-bar {
+    display: flex;
+    /*flex-flow: row wrap;*/
+    /*justify-content: flex-start;*/
+    background-color: DodgerBlue;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.flex-bar > li {
+    flex-grow: 2;
+    background-color: #f1f1f1;
+    margin: 5px;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.flex-bar > li:nth-child(1) {
+    background-color: coral;
+}
+
+.flex-bar > li:nth-child(2) {
+    background-color: greenyellow;
+}
+
+.flex-bar > li:nth-child(3) {
+    background-color: palevioletred;
 }

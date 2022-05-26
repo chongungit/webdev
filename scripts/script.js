@@ -25,11 +25,12 @@ tL
     })
     .from('.grid-2', {
         opacity: 0,
-        stagger: 0.5
+        stagger: 0.5,
+        ease: 'power2.in'
     })
     .from('.grid-3', {
         x: '-100vw',
-        ease: 'power2.in'
+        ease: 'bounce'
     }, 1)
     .from('.grid-4', {
         x: '500%',
